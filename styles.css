@@ -1,0 +1,94 @@
+:root {
+  --bg-color: #393E46;
+  --accent-color: #4ECCA3;
+  --shadow-color: #232931;
+  --hover-color: #3eb591;
+  --text-white: #EEEEEE;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice {
+  text-align: center;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 var(--shadow-color);
+  font-size: 8rem;
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: var(--text-white);
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.roll-btn {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 30px;
+  box-shadow: 0 6px var(--shadow-color);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.roll-btn:hover {
+  background-color: var(--hover-color);
+}
+
+.roll-btn:active {
+  box-shadow: 0 2px var(--shadow-color);
+  transform: translateY(4px);
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .roll-btn {
+    font-size: 1.8rem;
+    padding: 8px 30px;
+  }
+
+  .dice-container {
+    flex-direction: column;
+  }
+}
